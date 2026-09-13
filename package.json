@@ -1,0 +1,9 @@
+{
+  "name": "gh-pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+	"export": "cp -R ../dist/* . && git add . && git commit -m 'EXPORTING WEBSITE' && git push -u origin main"
+  },
+}
