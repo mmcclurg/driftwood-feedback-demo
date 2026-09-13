@@ -1,0 +1,40 @@
+Arguments: 
+  /Users/mmcclurg/.nvm/versions/node/v20.20.2/bin/node /usr/local/Cellar/yarn/1.22.19/libexec/bin/yarn.js push
+
+PATH: 
+  /Users/mmcclurg/.rvm/gems/ruby-2.6.0/bin:/Users/mmcclurg/.rvm/gems/ruby-2.6.0@global/bin:/Users/mmcclurg/.rvm/rubies/ruby-2.6.0/bin:/Users/mmcclurg/.nvm/versions/node/v20.20.2/bin:/Users/mmcclurg/.config/basher/cellar/bin:/Users/mmcclurg/.config/basher/bin:/usr/local/bin:/Users/mmcclurg/.config/ei/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/iTerm.app/Contents/Resources/utilities:/Users/mmcclurg/.pyenv/versions/anaconda3-2018.12/bin/:/usr/local/opt/postgresql@15/bin:/Users/mmcclurg/.rvm/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.20.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/mmcclurg/CODE/dw-feedback/driftwood-feedback-demo/package.json: Expected double-quoted property name in JSON at position 304
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.19/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "gh-pages",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+  	"export": "cp -R ../dist/* . && git add . && git commit -m 'EXPORTING WEBSITE' && git push -u origin main",
+  	"push": "git add . && git commit -m \"EXPORTING WEBSITE\" && git push -u origin main"
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
