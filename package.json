@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
 	"export": "rm -fr ./assets && rm index.html && cp -R ../dist/* . && git add . && git commit -m 'EXPORTING WEBSITE' && git push -u origin main",
-	"push": "git add . && git commit -m \"EXPORTING WEBSITE\" && git push -u origin main"
+	"push": "git add . && git commit -m \"EXPORTING WEBSITE\" && git push -u origin main",
+	"cp": "rm -fr ./assets && rm ./index.html && cp -R ../dist/* ."
   }
 }
